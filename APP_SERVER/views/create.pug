@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h1=title
+  form(action='' method='POST')
+    .form-group
+      label(for='song_name') Song Name:
+      input#song_name.form-control(type='text' name='song_name' autofocus='true' required='')
+    .form-group
+      label(for='artist_name') Artist Name:
+      input#artist_name.form-control(type='text' name='artist_name' required='')
+    .form-group
+      label(for='age') Artist Age:
+      input#age.form-control(type='number' name='age' required='')
+    .form-group
+      label(for='gender') Artist Gender:
+      input#gender.form-control(type='text' name='gender' required='')
+    .form-group
+      label(for='duration') Song Duration:
+      input#duration.form-control(type='text' name='duration' required='')
+    .form-group
+      label(for='lyricist') Lyricist:
+      input#lyricist.form-control(type='text' name='lyricist')
+    .form-group
+      label(for='language') Language:
+      input#language.form-control(type='text' name='language' required='')
+    .form-group
+      label(for='rating') Rating:
+      input#rating.form-control(type='number' name='rating' min='1' max='5' required='')
+    .form-group
+      label(for='released_on') Released Date:
+      input#released_on.form-control(type='date' name='released_on' required='')
+    br
+    input(type='submit' value='Submit')
+  br
+
+  
+

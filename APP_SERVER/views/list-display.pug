@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  br
+  h1 Music List
+  br
+  ul.list-group.list-group-flush
+   each songs in musicList
+    li.list-group-item Song :  
+      a(href=`/musics/${songs._id}`) #{songs.song_name}
+      br
+      | Artist :  #{songs.artist[0].artist_name}
+  br
+  br

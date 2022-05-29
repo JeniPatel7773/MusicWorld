@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #730303;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.footer-area {
+  background-color: #730303;
+  font-family: 'Lobster', cursive;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 15pt;
+}
+a {
+  color: #00B7FF;
+}
+
+.details-heading {
+  color: #730303;
+}
+.details-table {
+  background-color: #d4b8b8;
+}
+
+.services li {
+    margin-bottom: 5px;
+    
+}
+
+li {
+    line-height: 1.8;
+}
+
+.btns {
+  float: right;
+}
+

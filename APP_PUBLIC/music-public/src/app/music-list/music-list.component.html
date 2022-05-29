@@ -1,0 +1,12 @@
+<br>
+<h1>Music List</h1>
+<br>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let music of musics;">
+        Song : <a routerLink="/musics/{{music._id}}">{{music.song_name}}</a>
+        <br>
+        Artist : {{music.artist.artist_name}}
+    </li>
+</ul>
+<br>
+<br>

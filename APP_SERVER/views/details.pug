@@ -1,0 +1,35 @@
+extends layout
+
+block content
+ br
+ h1 Song:  
+  span.details-heading.font-weight-bold=currentMusic.song_name
+ table.table.table-bordered
+    tr.details-table
+     th Song Name:
+     td=currentMusic.song_name
+    tr
+     th Artist Name:
+     td=currentMusic.artist[0].artist_name
+    tr.details-table
+     th Artist Age:
+     td=currentMusic.artist[0].age
+    tr 
+     th Artist Gender:
+     td=currentMusic.artist[0].gender
+    tr.details-table
+     th Song Duration:
+     td=currentMusic.duration 
+    tr 
+     th Lyricist:
+     td=currentMusic.lyricist
+    tr.details-table
+     th Language:
+     td=currentMusic.language
+    tr 
+     th Rating:
+     td=currentMusic.rating 
+    tr.details-table
+     th Released On:
+     td=currentMusic.released_on 
+ br

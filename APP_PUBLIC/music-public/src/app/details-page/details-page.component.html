@@ -1,0 +1,59 @@
+<br>
+<!--app-header [content]="pageContent.header"></app-header>-->
+<br>
+<h1>Song: 
+    <span class="details-heading font-weight-bold">{{newMusic.song_name}}</span>
+   <div class="btns" > 
+      <button class="m-3 btn btn-secondary" (click)="onDelete(newMusic._id)">
+          <i class="fa fa-trash-o" style="font-size:24px"></i>
+        </button>
+
+        <button class="m-3 btn btn-secondary">
+            <a routerLink="/update/{{newMusic._id}}" style="color:white">
+                <i class="fa fa-pencil" style="font-size:24px"></i>
+            </a>
+        </button> 
+    </div>  
+</h1>
+
+
+<table class="table table-bordered">
+    <tr class="details-table">
+        <th scope="row">Song Name: </th>
+        <td>{{newMusic.song_name}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Artist Name: </th>
+        <td>{{newMusic.artist.artist_name}}</td>
+    </tr>
+    <tr class="details-table">
+        <th scope="row">Artist Age: </th>
+        <td>{{newMusic.artist.age}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Artist Gender: </th>
+        <td>{{newMusic.artist.gender}}</td>
+    </tr>
+    <tr class="details-table">
+        <th scope="row">Song Duration: </th>
+        <td>{{newMusic.duration}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Lyricist: </th>
+        <td>{{newMusic.lyricist}}</td>
+    </tr>
+    <tr class="details-table">
+        <th scope="row">Language: </th>
+        <td>{{newMusic.language}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Rating: </th>
+        <td>{{newMusic.rating}}</td>
+    </tr>
+    <tr class="details-table">
+        <th scope="row">Released On: </th>
+        <td>{{newMusic.released_on}}</td>
+    </tr> 
+</table>
+
+ <br>

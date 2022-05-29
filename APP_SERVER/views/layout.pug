@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+  
+  body
+    nav.navbar.navbar-expand.navbar-dark
+      a.navbar-brand(href='/') MusicWorld
+      div
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/list') List
+          li.nav-item
+            a.nav-link(href='/display') Display
+          li.nav-item
+            a.nav-link(href='/createNew') Create
+          li.nav-item
+            a.nav-link(href='/about') About
+
+    div.wrapper
+      block content
+
+    footer.footer-area
+      .row 
+        .col-12 
+          small &copy; MusicWorld.com
+
